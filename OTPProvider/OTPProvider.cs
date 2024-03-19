@@ -74,7 +74,7 @@ namespace OTPProvider
         /// <param name="Counter">The current counter value.
         /// 
         /// Default value is 0</param>
-        public UriStructure GenerateOTPUri(string Secret, string UserName, string CompanyName, string OTPType, int Counter)
+        public UriStructure GenerateOTPUri(string Secret, string UserName, string CompanyName = "", string OTPType = "TOTP", int Counter = 0)
         {
             UriStructure data = new UriStructure();
 
